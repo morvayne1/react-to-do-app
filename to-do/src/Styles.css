@@ -1,0 +1,72 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(153, 153, 153);
+}
+
+.to-do-label {
+    font-size: 4rem;
+}
+
+.taskInput {
+    font-size: 1.7rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+button {
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: none;
+    margin-left: 4px;
+    border-radius: 6px;
+}
+
+li {
+    margin: 10px 20px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(223, 217, 217);
+}
+
+.taskText {
+    font-size: 1.6rem;
+    flex: 1;
+}
+
+.removeBtn {
+    background-color: hsl(0, 65%, 47%);;
+}
+
+.moveBtn {
+    background-color: hsl(180, 54%, 49%)
+}
+
+.enterBtn { 
+    background-color: hsl(120, 65%, 61%);
+    border: 1px solid black;
+}
+
+.checkboxBlock { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+.isComplete {
+    font-size: 0.8rem;
+}
+
+.checkbox { 
+    cursor: pointer;
+}
