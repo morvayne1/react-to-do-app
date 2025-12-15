@@ -11,14 +11,25 @@ A feature-rich To-Do application built with React (hooks) during self-study.
 - Empty state message ("No tasks yet..")
 - Unique IDs using `crypto.randomUUID()`
 - Clean, maintainable code with immutable updates
+- Dark theme & modern UI
+- Responsive design
+
 
 ## Technologies
 - React 18 (hooks)
 - JavaScript (ES6+)
 - CSS3 (custom styling)
+- Playwright
 
-## Setup & Run Locally
+## E2E Testing
+Covered with 5 Playwright end-to-end tests:
+- Adding and removing tasks
+- Moving tasks up/down
+- Toggling completion with checkbox
+
+## Setup & Run & TEST Locally
 ```bash
+npx playwright test
 git clone https://github.com/morvayne1/react-to-do-app.git
 cd react-to-do-app
 npm install
