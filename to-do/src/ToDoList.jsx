@@ -70,7 +70,7 @@ const ToDoList = () => {
           Enter
         </button>
       </form>
-        {tasks.length === 0 && <h2>No tasks yet..</h2>}
+        {tasks.length === 0 && <h2 className='noTasks'>No tasks yet..</h2>}
       <ol>
         {tasks.map((task, index) => (
           <li key={task.id}>
@@ -78,7 +78,8 @@ const ToDoList = () => {
             <span
               className="taskText"
               style={{
-                textDecoration: task.completed ? 'line-through' : 'none'
+                textDecoration: task.completed ? 'line-through' : 'none',
+                color: task.completed ? 'hsl(0, 0%, 60%)' : 'hsl(0, 0%, 88%)'
               }}
             >
               {task.task}
